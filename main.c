@@ -20,7 +20,12 @@ int main(){
 
     if((x - a)*(x - a) + (y - b)*(y - b) < (r * r)){
         printf("Point is in circle");
+    }else if((x - a)*(x - a) + (y - b)*(y - b) > (r * r)){
+        printf("Point is not in circle");
     }
+
+
+
     return 0;
 }
 
