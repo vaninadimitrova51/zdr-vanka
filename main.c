@@ -1,36 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <math.h>
+#define PI 3,1415
 
 int main(){
 
     int x;
     int y;
+    int a = 0;
+    int b = 0;
+    int r = 2;
 
-    printf("What's the first number? \n");
-    scanf("%d", &x);
 
+    printf("Enter the value of x: \n");
+    scanf("%f", x);
 
-    printf("What's the second number? \n");
-    scanf("%d", &y);
+    printf("Enter the value of y: \n");
+    scanf("%f", y);
 
-    if (x < 2 && y < 2){
-        printf("point (%d, %d) falls into the gray part\n");
-    }else if (x > 2 && y > 2){
-        printf("point (%d, %d) doesn't falls into the gray part\n");
-    }else if (x > -2  && y < 2){
-        printf("point (%d, %d) falls into the gray part\n");
-    }else if (x < -2 && y > 2){
-        printf("point (%d, %d) doesn't falls into the gray part\n");
-    }else if (x >= -1 && y >= -2){
-        printf("point (%d, %d) falls into the gray part\n");
-    }else if (x < -1 && y < -2){
-        printf("point (%d, %d) doesn't falls into the gray part\n");
-    }else if (x <= 1 && y >= -2){
-        printf("point (%d, %d) falls into the gray part\n");
-    }else if (x > 1 && y < -2){
-        printf("point (%d, %d) doesn't falls into the gray part\n");
-    }
+    r = sqrt(pow((x-a), 2) * pow((y - b), 2));
+
 
     return 0;
 }
