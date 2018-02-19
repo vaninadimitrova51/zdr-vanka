@@ -10,19 +10,17 @@ int main(){
     int a = 0, b = 0;
     int r = 2;
 
-    int * pX = &x;
-    int * pY = &y;
 
     printf("Enter the value of x: \n");
-    scanf("%d", pX);
+    scanf("%d", &y);
 
     printf("Enter the value of y: \n");
-    scanf("%d", pY);
-
-    r = sqrt(pow((x - a), 2) + pow((y - b), 2));
+    scanf("%d", &x);
 
 
-
+    if((x - a)*(x - a) + (y - b)*(y - b) < (r * r)){
+        printf("Point is in circle");
+    }
     return 0;
 }
 
